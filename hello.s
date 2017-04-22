@@ -9,7 +9,7 @@
 	        int     $0x80          # execute syscall
 
 	        xor     %ebx, %ebx     # set 0 to ebx, return code(xor A A = 0)
-	        mov     $1, %eax       # numbuer of exit_() syscall, 1
+	        mov     $1, %eax       # numbuer of _exit() syscall, 1
 	        int     $0x80          # execute syscall
 	message:
 	        .ascii  "Hello World!\n"
